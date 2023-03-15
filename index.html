@@ -30,13 +30,21 @@
       font-family: 'Outfit', sans-serif;
     }
 
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .qr-card {
-      display: inline-block;
+      display: flex;
       background:hsl(0, 0%, 100%);
       border-radius: 25px;
       width: 19em;
       padding: 20px;
-      margin-top: 10%;
+      flex-direction: column;
+      align-items: center;
     }
 
     .qr-card img {
@@ -47,8 +55,8 @@
     .qr-card p {
       color: hsl(220, 15%, 55%);
       font-weight: 400;
-      font-size: 15px;
-    
+      font-size: 18px;
+      margin-top: 0;
     }
 
     media
@@ -57,12 +65,14 @@
 </head>
 <body>
 
+  <section>
+    <div class="qr-card">
+      <img src="./images/image-qr-code.png" alt="qr code image">
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </section>
 
-  <div class="qr-card">
-    <img src="./images/image-qr-code.png" alt="qr code image">
-    <h2>Improve your front-end<br> skills by building projects</h2>
-    <p>Scan the QR code to visit Frontend <br>Mentor and take your coding skills to <br>the next level</p>
-  </div>
 
   
   <div class="attribution">
